@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>Profile Page</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <div class="title">Profile</div>
+                <ul class="nav-links">
+                    <li>Home</li>
+                    <li><strong>My Profile</strong></li>
+                    <li>Find Connections</li>
+                </ul>
+            </div>
+            <a href="#" class="sign-out">Sign Out</a>
+        </nav>
+    </header>
+    <main>
+        <div class="left-col col">
+            <div class="profile card">
+                <div class="profile-top">
+                    <img src="./icons/user-circle.png" alt="profile picture" class="pic">
+                </div>
+                <div class="body">
+                    <h1 id="profileName">Jane Doe</h1>
+                    <div class="icon row">
+                        <img src="./icons/map-marker.png" alt="map marker icon" class="icon utility">
+                        <h4>Seattle</h4>
+                    </div>
+                    <p>
+                        Developer | Engineer | Problem Solver<br>
+                        Master of shadows and the Internet!
+                    </p>
+                    <div class="icon row">
+                        <img src="./icons/gear.png" alt="gear icon" class="icon utility">
+                        <a onclick="changeName(profileName)" href="#">edit profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card rad">
+                <div id="edu">
+                    <p>Education</p>
+                </div>
+                <div class="body">
+                    <h2>Coding Dojo - Full Stack Bootcamp</h2>
+                    <h3 class="grey">Dec 2019 - Mar 2020</h3>
+                    <p>Triple black belt in Python, MERN, and C#...</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-col col">
+            <div id="connectionRequests" class="card">
+                <div class="top">
+                    <p id="requestCount" class="count">2</p>
+                    <p>Connection Requests</p>
+                </div>
+                <div class="request-body">
+                    <div id="request1" class="request row">
+                        <div class="row">
+                            <img src="./icons/user-circle.png" alt="profile picture" class="icon">
+                            <p>Todd E</p>
+                        </div>
+                        <div>
+                            <img onclick="accept(request1)" src="./icons/accept-circle.png" alt="" class="icon">
+                            <img onclick="reject(request1)" src="./icons/close-circle.png" alt="" class="icon">
+                        </div>
+                    </div>
+                    <div id="request2" class="request row">
+                        <div class="row">
+                            <img src="./icons/user-circle.png" alt="profile picture" class="icon">
+                            <p>Phil K</p>
+                        </div>
+                        <div>
+                            <img onclick="accept(request2)" src="./icons/accept-circle.png" alt="" class="icon">
+                            <img onclick="reject(request2)" src="./icons/close-circle.png" alt="" class="icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="yourConnections" class="card">
+                <div class="top">
+                    <p id="connectionCount" class="count">418</p>
+                    <p>Your Connections</p>
+                </div>
+                <div>
+                    <div class="connections body">
+                        <div class="row">
+                            <img src="./icons/user-circle.png" alt="profile picture" class="icon">
+                            <p>Adrien D</p>
+                        </div>
+                        <div class="row">
+                            <img src="./icons/user-circle.png" alt="profile picture" class="icon">
+                            <p>Anne J</p>
+                        </div>
+                        <div class="row">
+                            <img src="./icons/user-circle.png" alt="profile picture" class="icon">
+                            <p>Alayne T</p>
+                        </div>
+                        <div class="row">
+                            <img src="./icons/user-circle.png" alt="profile picture" class="icon">
+                            <p>Arry Y</p>
+                        </div>
+                        <div class="row">
+                            <img src="./icons/user-circle.png" alt="profile picture" class="icon">
+                            <p>The Maestro</p>
+                        </div>
+                    </div>
+                    <div class="more"><a href="#">View More</a></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./script.js"></script>
+</body>
+</html>

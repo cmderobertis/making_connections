@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Utility Classes */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.rad {
+    border-radius: 6px;
+}
+
+.icon {
+    height: 2em;
+}
+
+.icon.utility {
+    height: 1.5em;
+}
+
+/* Utility Classes End */
+body {
+    background-color: #eee;
+}
+
+.top {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em 0;
+    border-radius: 3px 3px 0 0;
+}
+
+.count {
+    background-color: #888;
+    padding: 0.25em 0.5em;
+    border-radius: 50%;
+}
+
+.grey {
+    color: grey;
+    position: relative;
+    top: -0.5em;
+}
+
+header {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 1em 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: xx-large;
+}
+
+.nav-links li {
+    margin-left: 1.5em;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.sign-out {
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 6px;
+    background-color: #14A2B8;
+    color: white;
+    padding: 0.25em 0.8em;
+}
+
+.sign-out:hover {
+    transform: scale(1.1);
+}
+
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    display: flex;
+    gap: 2em;
+}
+
+.left-col {
+    flex: 2;
+}
+
+.right-col {
+    flex: 1;
+}
+
+.card {
+    border: 1px solid #888;
+    border-radius: 6px;
+    background-color: white;
+}
+
+#edu {
+    background-color: black;
+    color: white;
+    padding: 0.75em 1em;
+    border-radius: 3px 3px 0 0;
+}
+
+.body {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#requests {
+    transition-duration: 0.1s;
+}
+
+.request-body {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.more {
+    border-top: 2px solid grey;
+    padding: 1em;
+}
+
+.profile-top {
+    background-color: #14A2B8;
+    height: 100px;
+    margin-bottom: 60px;
+    border-radius: 3px 3px 0 0;
+}
+
+.pic {
+    height: 100px;
+    position: relative;
+    top: 50px;
+    left: 25px
+}
+
+a {
+    color: #2B78E4;
+}
+
+.request.row {
+    justify-content: space-between;
+}
+
+.connections {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
